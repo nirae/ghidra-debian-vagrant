@@ -2,6 +2,8 @@
 
 Don't want to install Ghidra on your computer?
 
+Debian (+ xcfe) vagrant box with Ghidra already installed and configured. Support X11 forwarding 
+
 ![screenshot](images/screen.png)
 
 v1.0:
