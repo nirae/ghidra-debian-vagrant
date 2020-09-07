@@ -46,7 +46,6 @@ Vagrant.configure("2") do |config|
       apt-get install -y xfce4
       sed -i 's/allowed_users=.*$/allowed_users=anybody/' /etc/X11/Xwrapper.config
       apt-get install -y wget vim curl xauth openjdk-11-jdk unzip
-    #   apt-get upgrade -y
       echo PATH='$PATH':/home/vagrant/.bin >> /home/vagrant/.bashrc
       echo PATH='$PATH':/usr/lib/jvm/java-11-openjdk-amd64 >> /home/vagrant/.bashrc
       echo "Downloading Ghidra ..."
@@ -66,5 +65,8 @@ Vagrant.configure("2") do |config|
       chown vagrant:vagrant /home/vagrant/Desktop/ghidra.desktop
       chmod 755 /home/vagrant/Desktop/ghidra.desktop
       cp /vagrant/ghidra.png /home/vagrant/Applications/ghidra_9.1.2_PUBLIC/ghidra.png
+
+      apt-get clean
+      apt-get autoremove --purge
     SHELL
 end
