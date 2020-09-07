@@ -16,6 +16,10 @@ v1.0:
 - memory 4096
 - vram 12
 
+**If you just want to use the box, please use the [Vagrant Hub](https://app.vagrantup.com/nirae/boxes/ghidra) last stable version**
+
+`vagrant init nirae/ghidra && vagrant up`
+
 ## Run
 
 `vagrant up`
