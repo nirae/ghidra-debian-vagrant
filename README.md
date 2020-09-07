@@ -1,7 +1,5 @@
 # Vagrant - Ghidra on Debian + XFCE
 
-![actions](https://github.com/nirae/ghidra-debian-vagrant/workflows/.github/workflows/actions.yml/badge.svg)
-
 Don't want to install Ghidra on your computer?
 
 Debian (+ xcfe) vagrant box with Ghidra already installed and configured. Support X11 forwarding 
